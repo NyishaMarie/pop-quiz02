@@ -1,3 +1,5 @@
+let score = 0;
+
 alert("What color is the sky on a clear day?");
 
 const questionOne = Number(prompt("[1] Blue\n[2] Green"));
@@ -38,4 +40,13 @@ if (questionThree !== 1 && questionThree !== 2 && questionThree !== 3) {
     alert("Correct! The result is 1.");
     score = score + 1;
 
+}
+
+
+if (score === 0) {
+  alert("You got none right.");
+} else if (score === 3) {
+  alert("Perfect score!");
+} else {
+  alert("You got some right!");
 }
