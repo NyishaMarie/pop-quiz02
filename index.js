@@ -14,7 +14,9 @@ if (questionOne !== 1 && questionOne !== 2) {
 alert("What shape is the Earth?");
 const questionTwo = Number(prompt("[1] Triangular\n[2] Flat\n[3] Circular"));
 
-if (questionTwo === 1) {
+if (questionTwo !== 1 && questionTwo !== 2 && questionTwo !== 3) {
+    alert("Please enter 1, 2, or 3.");
+} else if (questionTwo === 1) {
     alert ("You have entered the incorrect answer. Please try again.");
 } else if (questionTwo === 2) {
     alert ("Wrong again. Please try again.");
